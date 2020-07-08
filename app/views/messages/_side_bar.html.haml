@@ -1,0 +1,18 @@
+.Side__bar
+  %div.LeftHeader
+    %div.LeftHeader__list
+      %h3.LeftHeader__userName
+        Masa
+      %ul.LeftHeader__iconList
+        %li.LeftHeader__Icon
+          = link_to "https://chatspace-2020.herokuapp.com/groups/new", class: "Contents__btn" do
+            = icon('far', 'edit')
+        %li.LeftHeader__Icon
+          = link_to "https://chatspace-2020.herokuapp.com/users/408/edit", class: "Contents__btn" do
+            = icon('fas', 'cog')
+  %div.Grouplist
+    %div.Group
+      %div.Group__name
+        techcamp
+      %div.Group__message
+        まだメッセージがありません
