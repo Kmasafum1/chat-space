@@ -1,7 +1,7 @@
 .Chat
-  %div.RightHeader
-    %div.RightHeader__group
-      %div.RightHeader__groupName
+  .RightHeader
+    .RightHeader__group
+      .RightHeader__groupName
         test
         %ul.RightHeader__memberList
           Member:
@@ -9,19 +9,19 @@
             Masa
     =link_to '#', class: "RightHeader__editButton" do
       Edit
-  %div.MessageField
-    %div.MessageBox
-      %div.MessageInfo
-        %div.MessageInfo__userName
+  .MessageField
+    .MessageBox
+      .MessageInfo
+        .MessageInfo__userName
           masa
-        %div.MessageInfo__date
+        .MessageInfo__date
           2019/11/20(Wed) 17:43:01
-      %div.Message
-        %div.Message__content
+      .Message
+        .Message__content
           おはよう
-  %div.Footer
+  .Footer
     %form.Form
-      %div.Form__contents
+      .Form__contents
         %input{type: :text, placeholder: "type a message", class: :Form__inputContent}
         %label{class: "inputImage"}
           = icon('fas', 'image')
