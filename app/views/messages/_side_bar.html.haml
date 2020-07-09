@@ -2,13 +2,15 @@
   %div.LeftHeader
     %div.LeftHeader__list
       %h3.LeftHeader__userName
-        Masa
+        = current_user.name
       %ul.LeftHeader__iconList
         %li.LeftHeader__Icon
-          = link_to "https://chatspace-2020.herokuapp.com/groups/new", class: "Contents__btn" do
+          -# = link_to "https://chatspace-2020.herokuapp.com/groups/new", class: "Contents__btn" do
+          = link_to '#', class: "Contents__btn" do
             = icon('far', 'edit')
         %li.LeftHeader__Icon
-          = link_to "https://chatspace-2020.herokuapp.com/users/408/edit", class: "Contents__btn" do
+          -# = link_to "https://chatspace-2020.herokuapp.com/users/408/edit", class: "Contents__btn" do
+          = link_to edit_user_path(current_user), class: "Contents__btn" do
             = icon('fas', 'cog')
   %div.Grouplist
     %div.Group
