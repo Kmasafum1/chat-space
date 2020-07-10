@@ -143,12 +143,12 @@
       border: none;
       padding: 0px 45px 0 15px;
     }
-    .inputImage {
+    &__inputImage {
       line-height: 50px;
       position: absolute;
       right: 10px;
       font-size: 25px;
-      input{
+      &__hidden{
         display:none;
       }
     }
